@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-device=1.0" />
-    <title>SPK Pemilihan Pegawai Terbaik</title>
+    <title>SPK Pemilihan Mahasiswa Berprestasi</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css"
@@ -23,7 +23,7 @@ session_start();
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/Lambang_Badan_Pusat_Statistik_(BPS)_Indonesia.svg" alt="Logo BPS" width="30"
+                <img src="assets/img/logoPOLSUB-HD.png" alt="Logo BPS" width="30"
                     height="24" class="d-inline-block align-text-top">
                 SPK Pemilihan Pegawai Terbaik
             </a>
