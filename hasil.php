@@ -18,7 +18,7 @@ session_start();
             <a class="navbar-brand" href="#">
                 <img src="assets/img/Lambang_Badan_Pusat_Statistik_(BPS)_Indonesia.svg" alt="Logo BPS" width="30"
                     height="24" class="d-inline-block align-text-top">
-                SPK Pemilihan Pegawai Terbaik
+                SPK Pemilihan Mahasiswa Berprestasi
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
