@@ -88,7 +88,7 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <ul class="navbar-nav">
+                <!-- <ul class="navbar-nav">
                     <li>
                         <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
@@ -96,8 +96,7 @@ session_start();
                         </button>
             
                     </li>
-                </ul>
-                
+                </ul> -->
                 <?php
                 } else {
                 ?>

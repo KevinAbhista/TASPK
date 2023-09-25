@@ -105,98 +105,6 @@ session_start();
             </div>
         </div>
     </nav>
-
-    <?php
-    if (empty($_SESSION['status'])) {
-    ?>
-    <main class="container py-5">
-        <span>Anda belum login, silahkan login terlebih dahulu</span>
-    </main>
-    <?php
-    } else if ($_SESSION['status'] == "pimpinan") {
-    ?>
-    <main class="container py-5">
-        <span>Hanya Kasubag TU yang dapat mengakses halaman ini</span>
-    </main>
-    <?php
-    } else if ($_SESSION['status'] == 'kasubag_tu') {
-    ?>
-    <main class="container py-5">
-        <form class="card mb-3" method="post" action="tambah_alternatif.php">
-            <h2 class="card-header py-5 text-center">TAMBAH ALTERNATIF</h2>
-            <div class="card-body">
-                <div class="mb-3">
-                    <label class="form-label">NIM</label>
-                    <input class="form-control" name="nip" type="text" />
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Nama</label>
-                    <input class="form-control" name="nama" type="text" />
-                </div>
-                <div class="row g-3 mb-3">
-                    <div class="col">
-                        <label class="form-label">Kelas</label>
-                        <input class="form-control" name="pangkat" type="text" />
-                    </div>
-                    <!-- <div class="col">
-                        <label class="form-label">Golongan</label>
-                        <input class="form-control" name="golongan" type="text" />
-                    </div>
-                </div> -->
-                <div class="row g-3 mb-3">
-                    <div class="col">
-                        <label class="form-label">Tempat Lahir</label>
-                        <input class="form-control" name="tempat_lahir" type="text" />
-                    </div>
-                    <div class="col">
-                        <label class="form-label">Tanggal Lahir</label>
-                        <input class="form-control" name="tgl_lahir" type="date" />
-                    </div>
-                </div>
-                <!-- <div class="row g-3 mb-3">
-                    <div class="col">
-                        <label class="form-label">Jabatan 1</label>
-                        <input class="form-control" name="jabatan_1" type="text" />
-                    </div>
-                    <div class="col">
-                        <label class="form-label">Jabatan 2</label>
-                        <input class="form-control" name="jabatan_2" type="text" />
-                    </div>
-                </div> -->
-                <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input class="form-control" name="email" type="text" />
-                </div>
-                <div class="mb-3">
-                    <div class="col">
-                        <label class="form-label">No HP</label>
-                        <input class="form-control" name="hp_1" type="text" />
-                    </div>
-                    <!-- <div class="col">
-                        <label class="form-label">No HP 2</label>
-                        <input class="form-control" name="hp_2" type="text" />
-                    </div>
-                </div> -->
-                <!-- <div class="mb-3">
-                    <label class="form-label">No NPWP</label>
-                    <input class="form-control" name="npwp" type="text" />
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">NIK</label>
-                    <input class="form-control" name="nik" type="text" />
-                </div> -->
-                <div class="mb-3">
-                    <label class="form-label">Alamat</label>
-                    <textarea class="form-control" name="alamat_1"></textarea>
-                </div>
-                <!-- <div class="mb-3">
-                    <label class="form-label">Alamat 2</label>
-                    <textarea class="form-control" name="alamat_2"></textarea>
-                </div> -->
-                <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="bi bi-save-fill"></i>
-                    Simpan</button>
-            </div>
-        </form>
         <div class="card">
             <h2 class="card-header text-center py-5">TABEL ALTERNATIF</h2>
             <div class="card-body">
@@ -382,7 +290,6 @@ session_start();
         </div>
     </main>
     <?php
-    }
     ?>
 
     <script src="assets/js/bootstrap.min.js"></script>
