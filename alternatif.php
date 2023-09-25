@@ -126,7 +126,7 @@ session_start();
             <h2 class="card-header py-5 text-center">TAMBAH ALTERNATIF</h2>
             <div class="card-body">
                 <div class="mb-3">
-                    <label class="form-label">NIP</label>
+                    <label class="form-label">NIM</label>
                     <input class="form-control" name="nip" type="text" />
                 </div>
                 <div class="mb-3">
@@ -135,14 +135,14 @@ session_start();
                 </div>
                 <div class="row g-3 mb-3">
                     <div class="col">
-                        <label class="form-label">Pangkat</label>
+                        <label class="form-label">Kelas</label>
                         <input class="form-control" name="pangkat" type="text" />
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <label class="form-label">Golongan</label>
                         <input class="form-control" name="golongan" type="text" />
                     </div>
-                </div>
+                </div> -->
                 <div class="row g-3 mb-3">
                     <div class="col">
                         <label class="form-label">Tempat Lahir</label>
@@ -153,7 +153,7 @@ session_start();
                         <input class="form-control" name="tgl_lahir" type="date" />
                     </div>
                 </div>
-                <div class="row g-3 mb-3">
+                <!-- <div class="row g-3 mb-3">
                     <div class="col">
                         <label class="form-label">Jabatan 1</label>
                         <input class="form-control" name="jabatan_1" type="text" />
@@ -162,37 +162,37 @@ session_start();
                         <label class="form-label">Jabatan 2</label>
                         <input class="form-control" name="jabatan_2" type="text" />
                     </div>
-                </div>
+                </div> -->
                 <div class="mb-3">
                     <label class="form-label">Email</label>
                     <input class="form-control" name="email" type="text" />
                 </div>
-                <div class="row g-3 mb-3">
+                <div class="mb-3">
                     <div class="col">
-                        <label class="form-label">No HP 1</label>
+                        <label class="form-label">No HP</label>
                         <input class="form-control" name="hp_1" type="text" />
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                         <label class="form-label">No HP 2</label>
                         <input class="form-control" name="hp_2" type="text" />
                     </div>
-                </div>
-                <div class="mb-3">
+                </div> -->
+                <!-- <div class="mb-3">
                     <label class="form-label">No NPWP</label>
                     <input class="form-control" name="npwp" type="text" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">NIK</label>
                     <input class="form-control" name="nik" type="text" />
-                </div>
+                </div> -->
                 <div class="mb-3">
-                    <label class="form-label">Alamat 1</label>
+                    <label class="form-label">Alamat</label>
                     <textarea class="form-control" name="alamat_1"></textarea>
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label class="form-label">Alamat 2</label>
                     <textarea class="form-control" name="alamat_2"></textarea>
-                </div>
+                </div> -->
                 <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="bi bi-save-fill"></i>
                     Simpan</button>
             </div>
@@ -204,22 +204,22 @@ session_start();
                 <table class="table nowrap" style="width: 100%;">
                     <thead>
                         <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">NIP</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">NIM</th>
                             <th scope="col">Nama</th>
-                            <th scope="col">Pangkat</th>
-                            <th scope="col">Golongan</th>
+                            <th scope="col">Kelas</th>
+                            <!-- <th scope="col">Golongan</th> -->
                             <th scope="col">Tempat Lahir</th>
                             <th scope="col">Tanggal Lahir</th>
-                            <th scope="col">Jabatan 1</th>
-                            <th scope="col">Jabatan 2</th>
+                            <!-- <th scope="col">Jabatan 1</th>
+                            <th scope="col">Jabatan 2</th> -->
                             <th scope="col">Email</th>
-                            <th scope="col">No HP 1</th>
-                            <th scope="col">No HP 2</th>
-                            <th scope="col">NPWP</th>
-                            <th scope="col">NIK</th>
-                            <th scope="col">Alamat 1</th>
-                            <th scope="col">Alamat 2</th>
+                            <th scope="col">No HP</th>
+                            <!-- <th scope="col">No HP 2</th> -->
+                            <!-- <th scope="col">NPWP</th>
+                            <th scope="col">NIK</th> -->
+                            <th scope="col">Alamat</th>
+                            <!-- <th scope="col">Alamat 2</th> -->
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>
@@ -241,18 +241,11 @@ session_start();
                             <td><?php echo $row['nip'] ?></td>
                             <td><?php echo $row['nama'] ?></td>
                             <td><?php echo $row['pangkat'] ?></td>
-                            <td><?php echo $row['golongan'] ?></td>
                             <td><?php echo $row['tempat_lahir'] ?></td>
                             <td><?php echo $row['tgl_lahir'] ?></td>
-                            <td><?php echo $row['jabatan_1'] ?></td>
-                            <td><?php echo $row['jabatan_2'] ?></td>
                             <td><?php echo $row['email'] ?></td>
                             <td><?php echo $row['hp_1'] ?></td>
-                            <td><?php echo $row['hp_2'] ?></td>
-                            <td><?php echo $row['no_npwp'] ?></td>
-                            <td><?php echo $row['nik'] ?></td>
                             <td><?php echo $row['alamat_1'] ?></td>
-                            <td><?php echo $row['alamat_2'] ?></td>
                             <td>
                                 <a type="button" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#modalEdit<?php echo $row['id']; ?>"><i
@@ -283,7 +276,7 @@ session_start();
                                                     ?>
                                             <input type="hidden" name="id" value="<?php echo $row1['id']; ?>">
                                             <div class="mb-3">
-                                                <label class="form-label">NIP</label>
+                                                <label class="form-label">NIM</label>
                                                 <input class="form-control" name="nip" type="text"
                                                     value="<?php echo $row1['nip']; ?>" />
                                             </div>
@@ -294,16 +287,16 @@ session_start();
                                             </div>
                                             <div class="row g-3 mb-3">
                                                 <div class="col">
-                                                    <label class="form-label">Pangkat</label>
+                                                    <label class="form-label">Kelas</label>
                                                     <input class="form-control" name="pangkat" type="text"
                                                         value="<?php echo $row1['pangkat'] ?>" />
                                                 </div>
-                                                <div class="col">
+                                                <!-- <div class="col">
                                                     <label class="form-label">Golongan</label>
                                                     <input class="form-control" name="golongan" type="text"
                                                         value="<?php echo $row1['golongan'] ?>" />
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="row g-3 mb-3">
                                                 <div class="col">
                                                     <label class="form-label">Tempat Lahir</label>
@@ -316,7 +309,7 @@ session_start();
                                                         value="<?php echo $row1['tgl_lahir'] ?>" />
                                                 </div>
                                             </div>
-                                            <div class="row g-3 mb-3">
+                                            <!-- <div class="row g-3 mb-3">
                                                 <div class="col">
                                                     <label class="form-label">Jabatan 1</label>
                                                     <input class="form-control" name="jabatan_1" type="text"
@@ -327,25 +320,25 @@ session_start();
                                                     <input class="form-control" name="jabatan_2" type="text"
                                                         value="<?php echo $row1['jabatan_2'] ?>" />
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="mb-3">
                                                 <label class="form-label">Email</label>
                                                 <input class="form-control" name="email" type="text"
                                                     value="<?php echo $row1['email'] ?>" />
                                             </div>
-                                            <div class="row g-3 mb-3">
+                                            <div class="mb-3">
                                                 <div class="col">
-                                                    <label class="form-label">No HP 1</label>
+                                                    <label class="form-label">No HP</label>
                                                     <input class="form-control" name="hp_1" type="text"
                                                         value="<?php echo $row1['hp_1'] ?>" />
                                                 </div>
-                                                <div class="col">
+                                                <!-- <div class="col">
                                                     <label class="form-label">No HP 2</label>
                                                     <input class="form-control" name="hp_2" type="text"
                                                         value="<?php echo $row1['hp_2'] ?>" />
                                                 </div>
-                                            </div>
-                                            <div class="mb-3">
+                                            </div> -->
+                                            <!-- <div class="mb-3">
                                                 <label class="form-label">No NPWP</label>
                                                 <input class="form-control" name="npwp" type="text"
                                                     value="<?php echo $row1['no_npwp'] ?>" />
@@ -354,17 +347,17 @@ session_start();
                                                 <label class="form-label">NIK</label>
                                                 <input class="form-control" name="nik" type="text"
                                                     value="<?php echo $row1['nik'] ?>" />
-                                            </div>
+                                            </div> -->
                                             <div class="mb-3">
-                                                <label class="form-label">Alamat 1</label>
+                                                <label class="form-label">Alamat</label>
                                                 <textarea class="form-control"
                                                     name="alamat_1"><?php echo $row1['alamat_1'] ?></textarea>
                                             </div>
-                                            <div class="mb-3">
+                                            <!-- <div class="mb-3">
                                                 <label class="form-label">Alamat 2</label>
                                                 <textarea class="form-control"
                                                     name="alamat_2"><?php echo $row1['alamat_2'] ?></textarea>
-                                            </div>
+                                            </div> -->
                                             <?php
                                                     }
                                                     ?>

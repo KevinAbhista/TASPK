@@ -140,10 +140,10 @@ session_start();
                         <input class="form-control" name="bobot" type="number" />
                     </div>
                     <div class="col">
-                        <label class="form-label">Jenis</label>
+                        <label class="form-label">Kategori</label>
                         <select class="form-select" name="jenis">
-                            <option value="benefit">benefit</option>
-                            <option value="cost">cost</option>
+                            <option value="benefit">Benefit</option>
+                            <option value="cost">Cost</option>
                         </select>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ session_start();
                             <th scope="col">ID</th>
                             <th scope="col">Kriteria</th>
                             <th scope="col">Bobot</th>
-                            <th scope="col">Jenis</th>
+                            <th scope="col">Kategori</th>
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>

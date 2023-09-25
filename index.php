@@ -88,6 +88,14 @@ session_start();
                         </div>
                     </div>
                 </div>
+                <ul class="navbar-nav">
+                    <li>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="bi bi-box-arrow-in-left"></i> REGISTRASI
+                        </button>
+                    </li>
+                </ul>
                 <?php
                 } else {
                 ?>
