@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     $sql_lgn = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result_lgn = mysqli_query($conn, $sql_lgn);
     $row_lgn = mysqli_fetch_assoc($result_lgn);
-    $sql_krit = "SELECT * FROM kriteria";
+    $sql_krit = "SELECT * FROM kriteria"; 
     $result_krit = mysqli_query($conn, $sql_krit);
 
     if (mysqli_num_rows($result_lgn) > 0) {

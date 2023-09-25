@@ -4,6 +4,8 @@ include('koneksi.php');
 
 $nip = $_POST['nip'];
 $nama = $_POST['nama'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 $pangkat = $_POST['pangkat'];
 $golongan = $_POST['golongan'];
 $tempat_lahir = $_POST['tempat_lahir'];
