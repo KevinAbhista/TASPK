@@ -23,9 +23,9 @@ session_start();
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logoPOLSUB-HD.png" alt="Logo BPS" width="30"
-                    height="24" class="d-inline-block align-text-top">
-                SPK Pemilihan Pegawai Terbaik
+                <img src="assets/img/logoPOLSUB-HD.png" alt="Logo Polsub" width="30"
+                    height="30" class="d-inline-block align-text-top">
+                SPK Pemilihan Mahasiswa Berprestasi
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
